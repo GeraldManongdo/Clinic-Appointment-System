@@ -1,0 +1,121 @@
+/* ═══════════════════════════════════════════
+   DESIGN SYSTEM VARIABLES
+   CSS Custom Properties for entire site
+═══════════════════════════════════════════ */
+
+:root {
+  /* Primary Colors - Teal Theme */
+  --teal: #0a7c6e;
+  --teal-light: #0e9e8d;
+  --teal-pale: #e6f5f3;
+  --teal-rgb: 10, 124, 110;
+
+  /* Accent Colors */
+  --gold: #c8962a;
+  --gold-pale: #fdf3dc;
+  --gold-rgb: 200, 150, 42;
+
+  /* Admin Panel Colors */
+  --primary: #1a3a5c;
+  --primary-light: #2563a8;
+  --primary-pale: #e8f0fb;
+  --accent: #0ea5e9;
+  --accent-pale: #e0f2fe;
+
+  /* Semantic Colors */
+  --green: #1a8a5a;
+  --green-pale: #d1fae5;
+  --red: #c0392b;
+  --red-pale: #fee2e2;
+  --yellow: #d97706;
+  --yellow-pale: #fef3c7;
+  --orange: #ea580c;
+  --orange-pale: #ffedd5;
+
+  /* Neutral Scale */
+  --ink: #0d1117;
+  --ink-2: #1c2730;
+  --ink-3: #2d3d4a;
+  --text: #0f172a;
+  --text-body: #2d3d4a;
+  --text-muted: #7a8fa0;
+  --muted: #64748b;
+
+  --white: #ffffff;
+  --off-white: #f3efe8;
+  --cream: #faf7f2;
+  --mist: #f0f4f7;
+  --mist-2: #e4eaef;
+  --mist-3: #d0dae3;
+  --border: #d8e4ec;
+  --bg: #f0f4f8;
+  --surface: #ffffff;
+  --surface2: #f8fafc;
+
+  /* Typography */
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body:
+    "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "DM Mono", monospace;
+  --font-serif: "Playfair Display", serif;
+
+  /* Spacing (base: 1rem = 16px) */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+
+  /* Border Radius */
+  --radius: 14px;
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 24px;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 2px 8px rgba(13, 17, 23, 0.06);
+  --shadow-md: 0 8px 32px rgba(13, 17, 23, 0.1);
+  --shadow-lg: 0 20px 60px rgba(13, 17, 23, 0.14);
+  --shadow-xl: 0 4px 6px rgba(0, 0, 0, 0.04), 0 10px 40px rgba(0, 0, 0, 0.1);
+
+  /* Transitions */
+  --transition-fast: all 0.15s ease;
+  --transition: all 0.2s ease;
+  --transition-slow: all 0.3s cubic-bezier(0.22, 0.68, 0, 1);
+
+  /* Z-Index Scale */
+  --z-dropdown: 100;
+  --z-sticky: 50;
+  --z-fixed: 1000;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--mist);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--teal);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--teal-light);
+}
+
+/* Selection Styling */
+::selection {
+  background-color: var(--teal);
+  color: var(--white);
+}
