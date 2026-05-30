@@ -1,0 +1,37 @@
+:root {
+  --primary: #2563eb;
+  --surface: #ffffff;
+  --muted: #6b7280;
+}
+body {
+  font-family: Inter, system-ui, sans-serif;
+  background: #f8fafc;
+  color: #1f2937;
+}
+.admin-shell {
+  min-height: 100vh;
+}
+.admin-sidebar {
+  width: 250px;
+}
+.admin-content {
+  min-height: 100vh;
+  background: #f3f4f6;
+}
+.navbar-brand {
+  font-weight: 700;
+}
+.btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+.card {
+  border-radius: 1rem;
+}
+.table th,
+.table td {
+  vertical-align: middle;
+}

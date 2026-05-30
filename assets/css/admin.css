@@ -1,0 +1,154 @@
+:root {
+  --primary: #1a6b5a;
+  --primary-light: #e8f5f1;
+  --text: #3a4a45;
+  --bg: #f7faf9;
+  --border: #dce8e4;
+}
+
+/* BASE */
+body {
+  background: var(--bg);
+  font-family: "Segoe UI", sans-serif;
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #0e1e1a;
+  padding: 20px 0;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow-y: auto;
+}
+
+.sidebar-brand {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 0 20px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* SIDEBAR LINKS */
+.sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 20px;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  font-size: 0.9rem;
+
+  transition: 0.2s;
+  border-left: 3px solid transparent;
+}
+
+.sidebar a:hover {
+  background: rgba(26, 107, 90, 0.25);
+  color: #fff;
+}
+
+.sidebar a.active {
+  background: rgba(26, 107, 90, 0.35);
+  color: #fff;
+  border-left: 3px solid var(--primary);
+}
+
+/* MAIN CONTENT */
+.main {
+  margin-left: 260px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* TOPBAR */
+.topbar {
+  height: 60px;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* CONTENT WRAPPER */
+.container-fluid {
+  flex: 1;
+}
+
+/* CARD UI */
+.card-ui {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+}
+
+/* BUTTON */
+.btn-primary {
+  background: var(--primary);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #145547;
+}
+
+/* TABLE */
+.table tbody tr:hover {
+  background: #f7faf9;
+}
+
+.table td,
+.table th {
+  padding: 14px 16px;
+  font-size: 0.9rem;
+}
+
+/* FORMS */
+.input-group-text {
+  background: #fff;
+  border-color: var(--border);
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: 0 0 0 3px rgba(26, 107, 90, 0.12);
+  border-color: var(--primary);
+}
+
+/* RESPONSIVE FIX */
+@media (max-width: 992px) {
+  .sidebar {
+    position: absolute;
+    left: -260px;
+    transition: 0.3s ease;
+  }
+
+  .sidebar.show {
+    left: 0;
+  }
+
+  .main {
+    margin-left: 0;
+  }
+}
